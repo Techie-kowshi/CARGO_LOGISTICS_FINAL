@@ -1,0 +1,253 @@
+/* Body and General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f0f2f5 25%, #ffffff); 
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header and Navigation */
+.App-header {
+  background-color: #555555; /* Grey background for the navbar */
+  padding: 20px 0;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Softer hover effect */
+  border-radius: 5px;
+}
+
+/* Section Titles */
+section h2 {
+  color: #030404;
+  margin-top: 40px;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Slightly wider letters for a modern feel */
+}
+
+/* Tracking Section */
+.tracking-form input {
+  padding: 12px;
+  margin-right: 10px;
+  width: 250px;
+  border-radius: 30px; /* Rounded input fields */
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.tracking-form input:focus {
+  box-shadow: 0 0 10px rgba(10, 11, 11, 0.5); /* Enhanced focus effect */
+}
+
+.tracking-form button {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #28a745, #218838); /* Gradient button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tracking-form button:hover {
+  background-color: #218838;
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.shipment-info {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e9f7ef;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.error {
+  margin-top: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+/* Shipment List Section */
+.shipment-list li {
+  list-style: none;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: box-shadow 0.3s ease;
+}
+
+.shipment-list li:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Elevated shadow on hover */
+}
+
+.shipment-list button {
+  padding: 8px 15px;
+  background: linear-gradient(135deg, #656666, #5e5f60); /* Gradient button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.shipment-list button:hover {
+  background-color: #58595a;
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Reviews Section */
+.review-list input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 30px; /* Rounded input */
+  border: 1px solid #ccc;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-list button {
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #ffc107, #e0a800); /* Gradient button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.review-list button:hover {
+  background-color: #e0a800;
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Map Section */
+.map-container {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.map-container h2 {
+  color: #030404;
+  margin-bottom: 20px;
+}
+
+.map-container input {
+  padding: 10px;
+  width: 150px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.map-container #map {
+  width: 100%;
+  height: 400px;
+  position: relative; /* Ensure the map is behind the heading and search bar */
+}
+
+.map-pointer {
+  background: url("https://as1.ftcdn.net/v2/jpg/02/74/71/40/1000_F_274714060_Xdo2qN8qEUE3LFemiN03ZlaOIbwff3c3.jpg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 999;
+  transform: translate(-50%, -100%);
+}
+
+/* Services Section */
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card h3 {
+  color: #626364;
+  font-size: 24px;
+}
+
+.service-card p {
+  color: #495057; /* Subtle gray text */
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deep shadow on hover */
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Footer shadow */
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
